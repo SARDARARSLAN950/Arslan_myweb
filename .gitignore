@@ -1,0 +1,40 @@
+# Django / Python
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Django local database
+db.sqlite3
+db.sqlite3-journal
+
+# Logs
+*.log
+
+# Static/media (generated)
+staticfiles/
+media/
+
+# Environment variables / secrets
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Byte-compiled
+*.whl
+*.egg
+*.egg-info
+build/
+dist/
+
+# VS Code
+.vscode/
+

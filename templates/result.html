@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Tutorial</title>
+</head>
+<body>
+    <br></br>
+
+<h1>This passage has {{word_count}} words </h1>
+
+<a href="{% url 'home' %}"> click here home</a>
+
+<br></br>
+{{article}}
+<br></br>
+<br></br>
+<h1> total words count</h1>
+{% comment %} {% for word,num in dict_words.items  %} {% endcomment %}
+{% for word,num in dict_words  %}
+<h1>{{word}}::{{num}}</h1>
+
+{% endfor  %}
+</body>
+</html>

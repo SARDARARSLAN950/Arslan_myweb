@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Web Page</title>
+</head>
+<body>
+
+    <h1>Welcome to My Website</h1>
+    <p>This is a simple paragraph of text on my very first web page.</p>
+    
+    <a href = "{% url 'result' %}">  Visit result </a>
+    <form action="{% url 'result' %}">
+    <br></br>
+
+    {% csrf_token %}
+    {% comment %} <input type="text" name="user_name">
+    <br></br>    
+    <input type="text" name="user_age">
+    <br></br> {% endcomment %}
+    <br></br>  
+    <textarea cols ='40 rows ="20' name="article"></textarea>
+    <br></br>
+    <input type="submit" value="submit">
+    
+</form>
+</body>
+</html>
